@@ -19,7 +19,9 @@
     color: white;
 }
 
-
+.container-xxl div{
+    border: 1px solid red;
+}
 
 
 

@@ -30,14 +30,45 @@
           <li class="nav-item texto-color">
             <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="/bootstrap/contacto.html">Contacto</a>
           </li>
+
+          <li class="nav-item dropdown"> <!--agrego un dropdown-->
+            <a class="nav-link dropdown-toggle link-light link-opacity-50 link-opacity-100-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gaming y Streaming
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Silla Gamer Profesional</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Audifono Gamer</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Mause Gamer</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown"> <!--agrego un dropdown menu despliegable-->
+            <a class="nav-link dropdown-toggle link-light link-opacity-50 link-opacity-100-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hogar y Oficina
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Asistente de Voz</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Repetidor de Wifi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Smart TV</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Inactivo</a>
+          </li>
+
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Busca los mejores productos" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
+
 
   <!--carusel-->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!--data carucel=moviento y data inteeval= cambios por milisegundos-->
@@ -66,9 +97,84 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  
+<!--contenido-->
+<div class="text-center my-4">
+  <h4>Ofertas Imperdibles</h4>
+</div>
 
+<div class="container-xxl text-center">
+  <div class="row g-4 align-items-center"> <!-- Añadimos g-4 para separar cuando se apilen verticalmente -->
+    
+    <!-- 1. COLUMNA DE LA IMAGEN PRINCIPAL -->
+    <!-- En móviles (col-12) limitamos su ancho máximo con estilos inline para que no se desborde, y centramos con mx-auto -->
+    <div class="col-12 col-md-3">
+      <img src="https://media.spdigital.cl/file_upload/Desktop_GridSection1_(2)_23532f16.webp" 
+          class="img-fluid rounded mx-auto d-block" 
+          style="max-width: 280px; width: 100%;" 
+          alt="img">
+    </div>
+    
+    <!-- 2. COLUMNA DERECHA QUE CONTIENE LAS 4 TARJETAS -->
+    <!-- CAMBIO CLAVE: col-12 en móviles para usar todo el espacio, col-md-9 en computadoras -->
+    <div class="col-12 col-md-9">
+      
+      <!-- Configuración responsiva para las cards -->
+      <div class="row row-cols-2 row-cols-md-2 row-cols-xl-4 g-3">
+        
+        <!-- Tarjeta 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://media.spdigital.cl/thumbnails/products/1776285376917-_1_f3e302cf_78f4adf5_thumbnail_256.jpg" class="card-img-top w-100" alt="img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Tarjeta 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://media.spdigital.cl/thumbnails/products/1776285376917-_1_f3e302cf_78f4adf5_thumbnail_256.jpg" class="card-img-top w-100" alt="img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Tarjeta 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://media.spdigital.cl/thumbnails/products/1776285376917-_1_f3e302cf_78f4adf5_thumbnail_256.jpg" class="card-img-top w-100" alt="img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://media.spdigital.cl/thumbnails/products/1776285376917-_1_f3e302cf_78f4adf5_thumbnail_256.jpg" class="card-img-top w-100" alt="img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
 
   <!--footer-->
   <br><br>
