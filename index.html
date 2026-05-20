@@ -6,11 +6,14 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="/bootstrap/inicio.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--navbar-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
     <div class="container-fluid header">
       <div>
@@ -35,6 +38,71 @@
       </div>
     </div>
   </nav>
+
+  <!--carusel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!--data carucel=moviento y data inteeval= cambios por milisegundos-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/fotos/bootstrap/banner.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/fotos/bootstrap/banner2.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/fotos/bootstrap/banner3.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <!--footer-->
+  <br><br>
+  <footer class="text-center footer">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button">
+          <i class="bi bi-google"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button">
+          <i class="bi bi-github"></i>
+        </a>
+      </section>
+    </div>
+
+    <div id ="footer-texto" class="text-center p-3">© By Dylan 2026</div>
+  </footer>
 
 
 
