@@ -13,15 +13,40 @@
     background: none ; /* Asegura que no se cree un fondo */
 }
 
+.contenido1-titulo{
+    margin-top: 50px;
+}
+.text-center h4{
+    font-weight:600;
+    color: blue;
+    padding-bottom: 10px;
+}
+.fuente p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.precio-edit{
+    color:rgb(40, 40, 229) ;
+}
+
 
 .footer{
     background-color: #000000;   
     color: white;
 }
 
-.container-xxl div{
+/* .container-xxl div{
     border: 1px solid red;
+} */
+
+/* 1. Convertimos el cuerpo de la tarjeta en un contenedor Flexbox vertical */
+.card-body {
+    display: flex;
+    flex-direction: column;
 }
 
-
+/* 2. Empujamos el precio hacia el fondo (arrastrando también al botón) */
+.card-body .precio-edit {
+    margin-top: auto;   /* Esto absorbe el espacio disponible arriba */
+    margin-bottom: 15px; /* Un espacio prudente para que no se pegue al botón */
+}
 
