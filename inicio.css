@@ -10,7 +10,7 @@
 }
 .texto-color .nav-link:hover {
     color: white;
-    background: none ; /* Asegura que no se cree un fondo */
+    background: none ; 
 }
 
 .contenido1-titulo{
@@ -34,11 +34,7 @@
     color: white;
 }
 
-/* .container-xxl div{
-    border: 1px solid red;
-} */
 
-/* 1. Convertimos el cuerpo de la tarjeta en un contenedor Flexbox vertical */
 .card-body {
     display: flex;
     flex-direction: column;
@@ -46,7 +42,45 @@
 
 /* 2. Empujamos el precio hacia el fondo (arrastrando también al botón) */
 .card-body .precio-edit {
-    margin-top: auto;   /* Esto absorbe el espacio disponible arriba */
-    margin-bottom: 15px; /* Un espacio prudente para que no se pegue al botón */
+    margin-top: auto;   
+    margin-bottom: 15px;
 }
+
+
+
+.descripcion{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+
+#informacion h1{
+    font-weight: bold;
+    color: blue;
+}
+#informacion p{
+    text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+    .linea-divisoria {
+        border-left: 2px solid #adb1b6;
+        height: 80%; 
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #informacion p{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .descripcion{
+        margin-top: 50px;
+    }
+}
+
 
