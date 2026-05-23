@@ -1,11 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/bootstrap/css/contacto.css">
+    <link rel="stylesheet" href="/bootstrap/css/inicio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyy">
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+    <div class="container-fluid header">
+      <div>
+        <a href="/bootstrap/index.html"><img src="/fotos/logo.png" width="100px" height="75px"></a>
+      </div>
+      <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!--cambie me-auto por mx-auto -->
+          <li class="nav-item texto-color">
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="/bootstrap/html/index.html">Inicio</a><!-- hover de bostrap implementado-->
+          </li>
+          <li class="nav-item texto-color">
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="/bootstrap/html/contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item dropdown"> <!--agrego un dropdown-->
+            <a class="nav-link dropdown-toggle link-light link-opacity-50 link-opacity-100-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gaming y Streaming
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Silla Gamer Profesional</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Audifono Gamer</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Mause Gamer</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown"> <!--agrego un dropdown menu despliegable-->
+            <a class="nav-link dropdown-toggle link-light link-opacity-50 link-opacity-100-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hogar y Oficina
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Asistente de Voz</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Repetidor de Wifi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Smart TV</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Inactivo</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Busca los mejores productos" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--carusel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!--data carucel=moviento y data inteeval= cambios por milisegundos-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/fotos/bootstrap/banner.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/fotos/bootstrap/banner2.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/fotos/bootstrap/banner3.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--formulario-->
+  <div class="container-lg titulo">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-8" id="titulo-form">
+        <h5>Formulario de Contacto</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-lg formulario">
+    <form>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <label for="Name" class="form-label">Nombre: </label>
+          <input type="text" class="form-control form-control-sm" id="Name" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="Apellido" class="form-label">Apellido: </label>
+          <input type="text" class="form-control form-control-sm" id="Apellido" required>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+        </div>
+        
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <label for="Telefono" class="form-label">Telefono: </label>
+          <input type="tel" class="form-control form-control-sm" id="Telefono" placeholder="Ej: +569 1234568" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="Nacimiento" class="form-label">Fecha de nacimiento: </label>
+          <input type="date" class="form-control form-control-sm" id="Name" required>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <label for="paisResidencia" class="form-label">País de residencia: </label>
+          <select id="paisResidencia" class="form-select form-select-sm" aria-label="Selecciona tu país" required>
+            <option value="" selected disabled hidden>Seleccione un país</option>
+            
+            <option value="1">Chile</option>
+            <option value="2">Argentina</option>
+            <option value="3">Mexico</option>
+            <option value="4">Brasil</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="Vivienda" class="form-label">Tipo de vivienda: </label>
+          <select class="form-select form-select-sm" aria-label="Small select example" required>
+            <option value="" selected disabled hidden>seleccione una opcion</option >
+            <option value="1">Casa</option>
+            <option value="2">Departamento</option>
+            <option value="3">Penthouse</option>
+            <option value="4  ">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <label for="Direccion" class="form-label">Direccion de domicilio: </label>
+          <input type="text" class="form-control form-control-sm" id="Direccion" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <label for="Codigo" class="form-label">Ciudad: </label>
+          <input type="text" class="form-control form-control-sm" id="Codigo" required>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <!--ACA SE PUEDE AGREGAR ALGO MAS-->
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 d-flex flex-column justify-content-end pb-2">
+          <div class="col-12 col-md-4 d-flex flex-column justify-content-end pb-2">
+            <div class="d-grid gap-2 col-6">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 d-flex flex-column justify-content-end pb-2">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch">
+            <label class="form-check-label" for="checkNativeSwitch">¿Recibir ofertas al correo?</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--footer-->
+  <br><br>
+  <footer class="text-center footer">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #d70ea1;" href="#!" role="button">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #19c22d;" href="#!" role="button">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </section>
+    </div>
+
+    <div id ="footer-texto" class="text-center p-3">© By Dylan 2026</div>
+  </footer>
+
+
+
     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+

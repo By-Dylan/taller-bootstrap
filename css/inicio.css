@@ -1,6 +1,11 @@
 *{
     font-family: Inter, sans-serif;
 }
+.bodyy{
+    
+    background-color: rgba(245, 245, 245);
+
+}
 .header{
     background-color: #000000;
     font-size: 16px;
@@ -30,16 +35,17 @@
 
 
 .footer{
+    margin-top: 70px;
     background-color: #000000;   
     color: white;
 }
+
 
 
 .card-body {
     display: flex;
     flex-direction: column;
 }
-
 /* 2. Empujamos el precio hacia el fondo (arrastrando también al botón) */
 .card-body .precio-edit {
     margin-top: auto;   
@@ -82,5 +88,9 @@
         margin-top: 50px;
     }
 }
+
+
+
+
 
 
