@@ -56,11 +56,42 @@
               <li><a class="dropdown-item" href="#">Smart TV</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Inactivo</a>
-          </li>
+          <li class="nav-item"> <!--link del modal-->
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">horario de atencion</a>
 
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                    <table class="table rounded">
+                      <thead>
+                        <tr class="table-dark">
+                          <th class="text-center" colspan="2">Horario de atencion </th>
+                        </tr>
+                        <tr>
+                          <th class="text-secondary" scope="col">lunes - viernes</th>
+                          <th class="text-end fw-semibold" scope="col">9:00am - 20:00pm</th>
+                        </tr>
+                        <tr>
+                          <th class="text-secondary" scope="col">sabado</th>
+                          <th class="text-end fw-semibold" scope="col">9:00am - 18:30pm</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
+        
+
+
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Busca los mejores productos" aria-label="Search"/>
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -119,8 +150,8 @@
         <div class="row">
           <div class="col" >
             <div class="btn-group-vertical "  role="group" aria-label="Vertical button group">
-              <button  type="button" class="btn btn-primary px-5" >Ver productos</button>
-              <button type="button" class="btn btn-secondary px-5">Soporte tecnico</button>
+              <a href="/bootstrap/html/index.html" class="btn btn-primary px-5">Ver productos</a>
+              <a href="/bootstrap/html/contacto.html" class="btn btn-secondary px-5">Soporte técnico</a>
             </div>
           </div>
         </div>
@@ -133,6 +164,7 @@
   <!--contenido1-->
   <div class="text-center contenido1-titulo">
     <h4>Ofertas Imperdibles</h4>
+    
   </div>
 
   <div class="container-xxl">
@@ -202,51 +234,57 @@
   </div>
 
 
-  <!--seccion pagos faciles-->
+  <!--seccion pagos disponibles-->
   <br><br>
-  <div class="container ">
+  <div class="container-sm  ">
+    <div class="row text-center">
+      <div class="col texto-pago">
+        <a>metodos de pagos disponibles</a>
+      </div>
+    </div>
     <div class="row justify-content-center">
-      <div class="col-4">
-        <div class="row gap-2">
-          <div class="col-auto  border rounded bg-white">
-            <img src="/fotos/bootstrap/banco estado.avif" width="50px" height="40px">
+      <div class="col-12 col-md-6">
+        <div class="row gap-2 justify-content-center">
+          <div class="col-auto col-md-auto border rounded bg-white banco-estado">
+            <img src="/fotos/bootstrap/banco estado.avif" width="40px" height="32px">
           </div>
-          <div class="col-auto border rounded bg-white">
+          <div class="col-auto col-md-auto border rounded bg-white">
             <img src="/fotos/bootstrap/aplepay.avif" width="60px" height="40px">
           </div>
-          <div class="col-auto border rounded bg-white">
+          <div class="col-auto col-md-auto border rounded bg-white visa">
             <img src="/fotos/bootstrap/vissa.avif" width="60px" height="20px">
           </div>
-          <div class="col-auto border rounded bg-white">
-            <img src="/fotos/bootstrap/webpay.png" width="55px" height="30px">
+          <div class="col-auto col-md-auto border rounded bg-white webpay">
+            <img src="/fotos/bootstrap/webpay.png" width="60px" height="30px">
           </div>
         </div>
       </div>
     </div>
   </div>
 
-<!-- 
-<div class="container ">
-  <div class="row justify-content-center">
-    <div class="col-auto col-md-4 ">
-      <div class="row gap-2">
-        <div class="col-auto border rounded bg-white">
-          <img src="/fotos/bootstrap/banco estado.avif" width="50px" height="40px">
-        </div>
-        <div class="col-auto border rounded bg-white">
-          <img src="/fotos/bootstrap/aplepay.avif" width="60px" height="40px">
-        </div>
-        <div class="col-auto border rounded bg-white">
-          <img src="/fotos/bootstrap/vissa.avif" width="60px" height="20px">
-        </div>
-        <div class="col-auto border rounded bg-white">
-          <img src="/fotos/bootstrap/webpay.png" width="55px" height="30px">
-        </div>
-      </div>
+
+<div class="container horario">
+  <div class="row justify-content-center ">
+    <div class="col-5">
+      <table class="table rounded">
+        <thead>
+          <tr class="table-dark">
+            <th class="text-center" colspan="2">Horario de atencion </th>
+          </tr>
+          <tr>
+            <th class="text-secondary" scope="col">lunes - viernes</th>
+            <th class="text-end fw-semibold" scope="col">9:00am - 20:00pm</th>
+          </tr>
+          <tr>
+            <th class="text-secondary" scope="col">sabado</th>
+            <th class="text-end fw-semibold" scope="col">9:00am - 18:30pm</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </div>
 </div>
--->
+
 
 
   <!--footer-->

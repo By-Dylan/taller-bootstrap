@@ -35,7 +35,7 @@
 
 
 .footer{
-    margin-top: 70px;
+    margin-top: 60px;
     background-color: #000000;   
     color: white;
 }
@@ -72,7 +72,24 @@
     border: 1px solid red;
 }
 
+.banco-estado{
+    padding-top: 5px;
+}
+.webpay{
+    padding-top: 5px;
+}
+.visa{
+    padding-top: 7px;
+}
 
+.texto-pago{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.horario{
+    margin-top: 70px;
+}
 @media (min-width: 768px) {
     .linea-divisoria {
         border-left: 2px solid #adb1b6;
