@@ -58,21 +58,50 @@
               <li><a class="dropdown-item" href="#">Smart TV</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Inactivo</a>
+          <li class="nav-item"> <!--link del modal-->
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Horarios de atencion</a>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                    <table class="table rounded">
+                      <thead>
+                        <tr class="table-dark">
+                          <th class="text-center" colspan="2">horario de atencion </th>
+                        </tr>
+                        <tr>
+                          <th class="text-secondary" scope="col">lunes - viernes</th>
+                          <th class="text-end fw-semibold" scope="col">9:00am - 20:00pm</th>
+                        </tr>
+                        <tr>
+                          <th class="text-secondary" scope="col">sabado</th>
+                          <th class="text-end fw-semibold" scope="col">9:00am - 18:30pm</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
 
         </ul>
-        <form class="d-flex" role="search">
+        <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Busca los mejores productos" aria-label="Search"/>
           <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </nav>
 
 
-  <!--carusel-->
+<!--carusel-->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!--data carucel=moviento y data inteeval= cambios por milisegundos-->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -178,13 +207,39 @@
             </div>
           </div>
 
-          <div class="row justify-content-center">
+          <div class="row ">
             <div class="col-12 col-md-6">
               <label for="exampleFormControlTextarea1" class="form-label">Comentario:</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-            <!--ACA SE PUEDE AGREGAR ALGO MAS-->
+            <div class="col-12 col-md-6 p-1">
+              <p>Motivo de consulta:</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" >
+                <label class="form-check-label" for="radioDefault1">
+                  Soporte tecnico
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                <label class="form-check-label" for="radioDefault2">
+                  Consulta
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                  Sugerencias
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                  Otro
+                </label>
+              </div>
+            </div>
           </div>
 
           <div class="row justify-content-center">
@@ -212,44 +267,9 @@
   </div>
 
 
-<!-- Button trigger modal -->
 
 
-
-<button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">horario de atencion</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-
-        <table class="table rounded">
-          <thead>
-            <tr class="table-dark">
-              <th class="text-center" colspan="2">Horario de atencion </th>
-            </tr>
-            <tr>
-              <th class="text-secondary" scope="col">lunes - viernes</th>
-              <th class="text-end fw-semibold" scope="col">9:00am - 20:00pm</th>
-            </tr>
-            <tr>
-              <th class="text-secondary" scope="col">sabado</th>
-              <th class="text-end fw-semibold" scope="col">9:00am - 18:30pm</th>
-            </tr>
-          </thead>
-        </table>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  <!--footer-->
+<!--footer-->
   <br><br>
   <footer class="text-center footer">
     <div class="container p-4 pb-0">
@@ -282,4 +302,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
 
