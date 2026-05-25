@@ -13,10 +13,6 @@
 .texto-color a{
     color: white;
 }
-.texto-color .nav-link:hover {
-    color: white;
-    background: none ; 
-}
 
 .contenido1-titulo{
     margin-top: 50px;
@@ -41,13 +37,12 @@
 }
 
 
-
 .card-body {
     display: flex;
     flex-direction: column;
 }
-/* 2. Empujamos el precio hacia el fondo (arrastrando también al botón) */
-.card-body .precio-edit {
+
+.card-body .precio-edit {   /*empujamos el precio hacia el fondo */
     margin-top: auto;   
     margin-bottom: 15px;
 }
