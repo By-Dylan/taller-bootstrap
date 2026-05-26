@@ -85,6 +85,23 @@
 .horario{
     margin-top: 70px;
 }
+
+
+.linea{
+    border: 1px solid red;
+}
+
+/* clases del nuevo diseño */
+
+.diseños-general{
+    margin-top: 70px;
+}
+.titulos p{
+    font-size:20px;
+    
+}
+
+
 @media (min-width: 768px) {
     .linea-divisoria {
         border-left: 2px solid #adb1b6;
