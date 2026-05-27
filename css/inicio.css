@@ -97,10 +97,17 @@
     margin-top: 70px;
 }
 .titulos p{
-    font-size:20px;
-    
+    font-size:25px;
+    color: #E11D48;
+    font-weight:bolder;
 }
-
+.color-btn a{
+    background-color: #E11D48;
+    border: none;
+}
+.color-dinero {
+    color: #E11D48 !important;
+}
 
 @media (min-width: 768px) {
     .linea-divisoria {

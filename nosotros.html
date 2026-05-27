@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nosotros</title>
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/nosotros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+    <div class="container-fluid header">
+      <div>
+        <a href="/index.html"><img src="/image/logo.png" width="100px" height="75px"></a>
+      </div>
+      <button style="background-color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> 
+          <li class="nav-item texto-color">
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="/index.html">Inicio</a><!-- hover -->
+          </li>
+          <li class="nav-item texto-color">
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item texto-color">
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="/nosotros.html">Nosotros</a>
+          </li>
+
+          <li class="nav-item dropdown"> <!--dropdown-->
+            <a class="nav-link dropdown-toggle link-light link-opacity-50 link-opacity-100-hover" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gaming y Streaming
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Silla Gamer Profesional</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Audifono Gamer</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Mause Gamer</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle link-light link-opacity-50 link-opacity-100-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hogar y Oficina
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Asistente de Voz</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Repetidor de Wifi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Smart TV</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <!--modal-->
+            <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Horarios de atencion</a>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                    <table class="table rounded">
+                      <thead>
+                        <tr class="table-dark">
+                          <th class="text-center" colspan="2">horario de atencion </th>
+                        </tr>
+                        <tr>
+                          <th class="text-secondary" scope="col">lunes - viernes</th>
+                          <th class="text-end fw-semibold" scope="col">9:00am - 20:00pm</th>
+                        </tr>
+                        <tr>
+                          <th class="text-secondary" scope="col">sabado</th>
+                          <th class="text-end fw-semibold" scope="col">9:00am - 18:30pm</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--banner-->
+  <div class="container-fluid banner-img">
+    <img src="/image/tienda presenciall.png" width="100%">
+  </div>
+
+
+<br><br><br><br>
+<!--nosottros-->
+  <div class="container text-center titulos">
+    <p>Nuestros Valores</p>
+  </div>
+  <div class="container valores mt-3">
+    <div class="row row-cols-6 gap-4 justify-content-center text-center" style="height: 130px;">
+      <div class="col" id="valor1" style="padding-top: 14px;">
+        <img src="/image/valor1.svg" class="mx-auto d-block" alt="Imagen centrada">
+        <p>Integridad</p>
+      </div>
+      <div class="col" id="valor2" style="padding-top: 14px;">
+        <img  src="/image/valor2.svg" class="mx-auto d-block" alt="img">
+        <p>Cercania</p>
+      </div>
+      <div class="col" id="valor3" style="padding-top: 14px;">
+        <img  src="/image/valor3.svg" class="mx-auto d-block" alt="img">
+        <p>pasion por la excelencia</p>
+      </div>
+      <div class="col" id="valor4" style="padding-top: 14px;">
+        <img  src="/image/valor4.svg" class="mx-auto d-block" alt="img">
+        <p>Colaboracion</p>
+      </div>
+      <div class="col" id="valor5" style="padding-top: 14px;">
+        <img  src="/image/valor5.svg" class="mx-auto d-block" alt="img">
+        <p>Unicos</p>
+      </div>
+    </div>
+  </div>
+
+
+<br><br><br><br><br><br>
+<!--mision y vision-->
+  <div class="container-fluid nosotros ">
+    <div class="row justify-content-center" >
+      <div class="col-11">
+
+        <div class="row text-center pt-3 fondo" style="height: 260px;">
+          <div class="col-4">
+            <img src="/image/icono proposito1.svg" alt="img">
+            <h5>Nuestro Mision</h5>
+            <p>Acercar la tecnologia a todos</p>
+          </div>
+          <div class="col-4">
+            <img src="/image/icono proposito2.svg" alt="img">
+            <h5>Nuestra Vision</h5>
+            <p>Liderar en tecnología en la región, siendo una empresa querida y respetada, que se distingue por el valor que aporta a clientes, colaboradores y a la sociedad. Ofreciendo soluciones innovadoras y accesibles que mejoran la calidad de vida de las personas.</p>
+          </div>
+          <div class="col-4">
+            <img src="/image/img proposito.webp" alt="img" style="width: 300px;">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<br><br><br> 
+  <!--opinion-->
+  <div class="container-lg text-center">
+    <div class="">
+      <h5>Envianos tu opinion</h5>
+    </div>
+    <div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#modalComentarios">
+        aquí
+      </button>
+
+      <div class="modal fade" id="modalComentarios" tabindex="-1" aria-labelledby="modalComentariosLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalComentariosLabel">Escribemos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input type="text" class="form-control" placeholder="coloca tu apodo" aria-label="First name">
+              <br>
+              <div class="input-group">
+                <span class="input-group-text">Comentanos:</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              <button type="button" class="btn btn-primary">enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="text-center footer">
+    <div class="p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn text-white btn-floating m-1" style="background-color: #E11D48;" href="#!" role="button">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #E11D48" href="#!" role="button">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #E11D48" href="#!" role="button">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a class="btn text-white btn-floating m-1" style="background-color: #E11D48" href="#!" role="button">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </section>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col col-sm-12">
+          <ul class="nav nav-underline justify-content-center">
+            <li class="pe-3">
+              <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="">Terminos y condiciones</a>
+            </li>
+            <li class="pe-3">
+              <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="">Politica de dovoluciones y rembolso</a>
+            </li>
+            <li>
+              <a class="nav-link link-light link-opacity-50 link-opacity-100-hover" href="">Preguntas frecuentes</a>
+            </li>
+          </ul>
+        </div>
+
+      </div> 
+    </div>
+
+    <div id ="footer-texto" class="text-center p-3" style="color: #E11D48 ;">© By Dilan Medina</div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

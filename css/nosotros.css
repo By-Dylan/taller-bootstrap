@@ -1,0 +1,36 @@
+#valor1{
+    background-color: rgba(193, 213, 255) !important; 
+}
+#valor2{
+    background-color: rgba(169, 238, 197) !important;
+}
+#valor3{
+    background-color: rgba(255, 197, 206) !important;
+}
+#valor4{
+    background-color: rgba(241, 255, 176) !important;
+}
+#valor5{
+    background-color: rgba(237, 173, 249) !important;
+}
+
+.valores p{
+    font-weight:bold;
+}
+
+.nosotros{
+    color: #ffffff ;
+}
+.nosotros h5{
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.fondo{
+    background-color: #9f1239;
+    border-radius: 5px;
+}
+.banner-img{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
