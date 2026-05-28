@@ -99,7 +99,7 @@
 .titulos p{
     font-size:25px;
     color: #E11D48;
-    font-weight:bolder;
+    
 }
 .color-btn a{
     background-color: #E11D48;
@@ -108,6 +108,28 @@
 .color-dinero {
     color: #E11D48 !important;
 }
+
+
+
+
+.titulo-sesion{
+    color: #ffffff;
+    font-weight:bold;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+.fondo-titulo{
+    background-color: #ce284c;
+}
+.fondo-titulo p{
+    margin-left: 150px;
+}
+.btn-cerrar {
+    color: #000000 !important;
+}
+
+
 
 @media (min-width: 768px) {
     .linea-divisoria {
