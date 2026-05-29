@@ -3,12 +3,16 @@
     margin-top: 80px;
 }
 #titulo-form{
-    background-color: rgb(0, 102, 255);
+    background-color: #E11D48;;
     color: white;
     padding-top: 4px;
     
 }
-
+.enviarr{
+    background-color: #E11D48 !important;
+    border-radius: 10px;
+    color: white !important;
+}
 .row{
     padding-top: 7px;
 }

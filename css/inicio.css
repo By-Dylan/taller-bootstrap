@@ -111,7 +111,6 @@
 
 
 
-
 .titulo-sesion{
     color: #ffffff;
     font-weight:bold;
@@ -128,6 +127,38 @@
 .btn-cerrar {
     color: #000000 !important;
 }
+
+
+
+/*nuevos clases tarea js*/
+
+.btn-volver {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(173, 0, 0);
+    color: white;
+    border: none;
+    position: fixed; 
+    left: 95%; 
+    bottom: 50px;
+    cursor: pointer;
+    /* El botón empieza oculto y no se puede clickear */
+    opacity: 0;
+}
+.icono {
+    font-size: 24px;
+}
+/* Cuando tenga esta clase, se muestra y se vuelve clickeable */
+.btn-volver.mostrar-boton {
+    opacity: 1;
+    /* pointer-events: auto; */
+}
+
+
+
+
+
 
 
 
