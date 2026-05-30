@@ -96,13 +96,14 @@
 .diseños-general{
     margin-top: 70px;
 }
+
 .titulos p{
     font-size:25px;
     color: #E11D48;
     
 }
-.color-btn a{
-    background-color: #E11D48;
+.color-btn button{
+    background-color: #E11D48 !important;
     border: none;
 }
 .color-dinero {
@@ -127,7 +128,9 @@
 .btn-cerrar {
     color: #000000 !important;
 }
-
+.nav-underline .nav-link.sin-linea:hover {
+    border-bottom-color: transparent !important;
+}
 
 
 /*nuevos clases tarea js*/
@@ -153,6 +156,22 @@
 .btn-volver.mostrar-boton {
     opacity: 1;
     /* pointer-events: auto; */
+}
+
+
+/*clases 2do evento*/
+
+/* Modo Claro */
+/* .bodyy {
+    background-color: #ffffff;
+    color: #333333;
+
+} */
+
+/* Modo Oscuro */
+.body-oscuro{
+    background-color: #000000;
+    color: #f5f5f5;
 }
 
 
