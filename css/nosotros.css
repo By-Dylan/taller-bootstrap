@@ -13,19 +13,25 @@
 #valor5{
     background-color: rgba(237, 173, 249) !important;
 }
-
+.valores1{
+    margin-top: 70px;
+}
 .valores p{
     font-weight:bold;
 }
 
 .nosotros{
     color: #ffffff ;
+    margin-top: 200px;
 }
 .nosotros h5{
     font-weight: bold;
     padding-top: 10px;
 }
-
+.opinion{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .fondo{
     background-color: #9f1239;
     border-radius: 5px;
@@ -34,3 +40,54 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
+
+/*nuevas clases*/
+
+.valores-ocultar{   /* contiene la img y el subtitulo */
+    display: none !important;
+}
+.texto-ocultar{
+    display: none;
+}
+
+/*doble click titulos*/
+.tituloo{
+    display: inline-block; /* Hace que el h5 solo ocupe el ancho de su texto */
+    cursor: pointer;
+}
+.parrafo-oculto{
+    display: none;
+}
+
+
+/*clases mesajes*/
+.mensaje{
+    width: 400px;
+    height: 180px;
+    background-color: #9f1239;
+    border-radius: 45px;
+    display: block;
+
+    position: fixed;
+    
+    /* 2. Lo ubicamos a una altura adecuada (ejemplo: 10% desde el techo) */
+    top: 20%; 
+    
+    /* 3. El truco definitivo para centrarlo horizontalmente */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* 4. Capa superior para que nada lo tape (Bootstrap usa hasta 1080 en modales) */
+    z-index: 2000;
+}
+.msj-contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 45px;
+    color:#ffffff;
+    font-size:medium;
+    
+}
+

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/nosotros.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="/js/nosotros.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,53 +103,79 @@
   </div>
 
 
-<br><br><br><br>
-<!--nosottros-->
-  <div class="container text-center titulos">
+
+<!--Valores-->
+  <div class="container text-center titulos valores1">
     <p>Nuestros Valores</p>
   </div>
   <div class="container valores mt-3">
     <div class="row row-cols-6 gap-4 justify-content-center text-center" style="height: 130px;">
-      <div class="col" id="valor1" style="padding-top: 14px;">
-        <img src="/image/valor1.svg" class="mx-auto d-block" alt="Imagen centrada">
-        <p>Integridad</p>
+      
+      <div class="col tarjeta-valor " id="valor1" style="padding-top: 14px;">
+        <div class="contenedor-valores ">
+          <img src="/image/valor1.svg" class="mx-auto d-block " alt="Imam">
+          <p>Integridad</p>
+        </div>
+        <p class="descripcion texto-ocultar">Actuamos con total transparencia, honestidad y ética en cada venta y asesoría.</p>
       </div>
-      <div class="col" id="valor2" style="padding-top: 14px;">
-        <img  src="/image/valor2.svg" class="mx-auto d-block" alt="img">
-        <p>Cercania</p>
+
+      <div class="col tarjeta-valor" id="valor2" style="padding-top: 14px;">
+        <div class="contenedor-valores ">
+          <img  src="/image/valor2.svg" class="mx-auto d-block" alt="img">
+          <p>Cercania</p>
+        </div>
+        <p class="descripcion texto-ocultar">Estamos siempre disponibles para ti.</p>
       </div>
-      <div class="col" id="valor3" style="padding-top: 14px;">
-        <img  src="/image/valor3.svg" class="mx-auto d-block" alt="img">
-        <p>pasion por la excelencia</p>
+
+      <div class="col tarjeta-valor" id="valor3" style="padding-top: 14px;">
+        <div class="contenedor-valores">
+          <img  src="/image/valor3.svg" class="mx-auto d-block" alt="img">
+          <p>pasion por la excelencia</p>
+        </div>
+        <p class="descripcion texto-ocultar">Nos autoexigimos el máximo para ofrecerte solo los mejores productos y un servicio impecable.</p>
       </div>
-      <div class="col" id="valor4" style="padding-top: 14px;">
-        <img  src="/image/valor4.svg" class="mx-auto d-block" alt="img">
-        <p>Colaboracion</p>
+
+      <div class="col tarjeta-valor" id="valor4" style="padding-top: 14px;">
+        <div class="contenedor-valores">
+          <img  src="/image/valor4.svg" class="mx-auto d-block" alt="img">
+          <p>Colaboracion</p>
+        </div>
+        <p class="descripcion texto-ocultar">rabajamos en equipo contigo para entender tus necesidades y encontrar la tecnología ideal.</p>
       </div>
-      <div class="col" id="valor5" style="padding-top: 14px;">
-        <img  src="/image/valor5.svg" class="mx-auto d-block" alt="img">
-        <p>Unicos</p>
+
+      <div class="col tarjeta-valor" id="valor5" style="padding-top: 14px;">
+        <div class="contenedor-valores">
+          <img  src="/image/valor5.svg" class="mx-auto d-block" alt="img">
+          <p>Unicos</p>
+        </div>
+        <p class="descripcion texto-ocultar">Ofrecemos una experiencia diferente.</p>
       </div>
+      
     </div>
   </div>
 
 
-<br><br><br><br><br><br>
+
 <!--mision y vision-->
   <div class="container-fluid nosotros ">
     <div class="row justify-content-center" >
       <div class="col-11">
 
-        <div class="row text-center pt-3 fondo" style="height: 260px;">
+        <div class="row text-center pt-3 fondo" style="height: 260px;" id="fondo-vision">
           <div class="col-4">
-            <img src="/image/icono proposito1.svg" alt="img">
-            <h5>Nuestro Mision</h5>
-            <p>Acercar la tecnologia a todos</p>
+            <img src="/image/icono proposito1.svg" alt="img"><br>
+            <h5 class="tituloo">Nuestra Mision</h5>
+            <div class="parrafo-oculto">
+              <p>Acercar la tecnologia a todos</p>
+            </div>
           </div>
+
           <div class="col-4">
-            <img src="/image/icono proposito2.svg" alt="img">
-            <h5>Nuestra Vision</h5>
-            <p>Liderar en tecnología en la región, siendo una empresa querida y respetada, que se distingue por el valor que aporta a clientes, colaboradores y a la sociedad. Ofreciendo soluciones innovadoras y accesibles que mejoran la calidad de vida de las personas.</p>
+            <img src="/image/icono proposito2.svg" alt="img"><br>
+            <h5 class="tituloo">Nuestra Vision</h5>
+            <div class="parrafo-oculto">
+              <p>Liderar en tecnología en la región, siendo una empresa querida y respetada, que se distingue por el valor que aporta a clientes, colaboradores y a la sociedad. Ofreciendo soluciones innovadoras y accesibles que mejoran la calidad de vida de las personas.</p>
+            </div>
           </div>
           <div class="col-4">
             <img src="/image/img proposito.webp" alt="img" style="width: 300px;">
@@ -160,9 +187,9 @@
     </div>
   </div>
 
-<br><br><br> 
+
   <!--opinion-->
-  <div class="container-lg text-center">
+  <div class="container-lg text-center opinion">
     <div class="">
       <h5>Envianos tu opinion</h5>
     </div>
@@ -175,7 +202,8 @@
       <div class="modal fade" id="modalComentarios" tabindex="-1" aria-labelledby="modalComentariosLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <form>
+
+            <form id="formulario-comentario">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="modalComentariosLabel">Escribemos</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -190,7 +218,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
-                <button type="submit" class="btn btn-primary">enviar</button>
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id="btn-enviar">enviar</button>
               </div>
             </form>
           </div>
@@ -199,6 +227,13 @@
     </div>
   </div>
 
+  <br>
+  <div class="  " id="id-mensaje">
+    <div class="msj-contenido">
+      <i class="bi bi-envelope-check-fill fs-2"></i>
+      <p>Se ha enviado tu comentario exitosamente</p>
+    </div>
+  </div>
 
 
 
