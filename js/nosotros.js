@@ -54,11 +54,11 @@ formulario.addEventListener("submit",(evento)=>{
     setTimeout(() => {
         mensaje.classList.add("mensaje");
         console.log("no se recargo la paginaaaa y puso el msj a los segundos que puse");
-    }, 2000);
+    }, 1000);
 
     setTimeout(() => { // desaparición con setTimeout
         mensaje.classList.remove("mensaje");
-    }, 6000); // 3000 milisegundos = 3 segundos
+    }, 5000); // 3000 milisegundos = 3 segundos
 
 
 });

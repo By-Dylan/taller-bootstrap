@@ -1,9 +1,5 @@
 
 const miBoton = document.getElementById("iboton"); //conectamos el html con js
-const iconoluna= document.getElementById("icono-luna");
-const tarjeta= document.querySelectorAll(".tarjeta");
-
-
 
 //Evento subir hacia arriba
 
@@ -25,7 +21,10 @@ window.addEventListener("scroll", () => {
 
 
 
-//cambiar el color del body
+
+//cambiar el color del body y card
+const iconoluna= document.getElementById("icono-luna");
+const fondo_card=document.querySelectorAll(".fondo");
 
 iconoluna.addEventListener("click", (evento) => {
     document.body.classList.toggle("body-oscuro");
@@ -36,15 +35,29 @@ iconoluna.addEventListener("click", (evento) => {
     if (document.body.classList.contains("body-oscuro")) {
         // Al entrar a modo oscuro, reemplazamos la luna con estrellas por el sol
         iconoluna.classList.replace("bi-moon-stars-fill", "bi-brightness-high-fill");
+
+        fondo_card.forEach(fondo =>{
+            fondo.classList.add("fondo-nuevo-card");
+            console.log("nuevo fondo del body y de las card");
+        });
+
     } else {
         // Al salir, reemplazamos el sol de vuelta por la luna con estrellas
         iconoluna.classList.replace("bi-brightness-high-fill", "bi-moon-stars-fill");
+        fondo_card.forEach(fondo =>{
+            fondo.classList.remove("fondo-nuevo-card");
+            console.log("se quito el nuevo dondo de las card y del doby");
+        });
+        
     }     
 });
 
 
 
+
+
 //cambiar de imagen en las cards
+const tarjeta= document.querySelectorAll(".tarjeta");
 
 tarjeta.forEach((img) => { // 2. Recorres cada imagen de la lista una por una
     const imgOriginal = img.src;
@@ -53,13 +66,13 @@ tarjeta.forEach((img) => { // 2. Recorres cada imagen de la lista una por una
     // 3. Evento: Cuando el mouse entra a la imagen
     img.addEventListener("mouseenter", () => {
         if (imgNueva) { //verifica si la imgnueva tiene el atributo o la ruta
-            img.src = imgNueva; 
+            img.src= imgNueva; 
         }
     });
 
     // 4. Evento: Cuando el mouse sale de la imagen
     img.addEventListener("mouseleave", () => {
-        img.src = imgOriginal;
+        img.src= imgOriginal;
     });
 });
 

@@ -100,8 +100,10 @@
 .titulos p{
     font-size:25px;
     color: #E11D48;
-    
 }
+
+
+
 .color-btn button{
     background-color: #E11D48 !important;
     border: none;
@@ -131,7 +133,9 @@
 .nav-underline .nav-link.sin-linea:hover {
     border-bottom-color: transparent !important;
 }
-
+.text-red{
+    color: #E11D48 !important;
+}
 
 /*nuevos clases tarea js*/
 
@@ -156,6 +160,14 @@
 .btn-volver.mostrar-boton {
     opacity: 1;
     /* pointer-events: auto; */
+}
+
+.fondo-nuevo-card{
+    background-color: #18181c !important;
+    color: white !important;
+}
+.fondo-nuevo-card h6{
+    color: white !important;
 }
 
 
